@@ -265,3 +265,49 @@ ul li {
 .job ul li {
     margin-bottom: 10px;
 }
+
+/* Portfolio Section */
+#portfolio {
+    padding: 50px;
+    background-color: #ffffff;
+    color: #333;
+}
+
+#portfolio h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project {
+    margin-bottom: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.project .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project .btn:hover {
+    background-color: #45a049;
+}
