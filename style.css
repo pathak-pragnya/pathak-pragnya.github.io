@@ -226,3 +226,42 @@ ul li {
 #resume .btn:hover {
     background-color: #45a049;
 }
+
+/* Work Section */
+#work {
+    padding: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#work h2 {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.job {
+    margin-bottom: 40px;
+}
+
+.job h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.job p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.job ul {
+    list-style-type: square;
+    margin-left: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.job ul li {
+    margin-bottom: 10px;
+}
