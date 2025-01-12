@@ -337,50 +337,39 @@
     <span class="heading-sec__main">Projects</span>
   </h2>
   <div class="project-cards-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-
-    <div class="project-card">
-      <div class="project-banner" style="background: rgb(21, 36, 67);">
-        <div class="project-blurred-div"></div>
-        <div class="project-div-title">
-          <h5 class="project-title">Optimizing LLMs for Mental Health Counseling</h5>
-        </div>
-        <img src="./images/projects/mental-health-llm.webp" alt="Mental Health LLM" class="project-rounded-img" />
+    <div class="project-card" style="display: flex; flex-direction: column; height: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+      <div class="project-banner" style="position: relative; flex: 1; background: url('./images/projects/mental-health-llm.webp') no-repeat center center/cover;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 4px;">
+          Optimizing LLMs for Mental Health Counseling
+        </h3>
       </div>
-      <div class="project-details">
+      <div class="project-details" style="padding: 10px; flex: 1; background: #f9f9f9;">
         <p>Fine-tuned Falcon LLM using LoRA and 4-bit quantization for empathy-driven mental health counseling, achieving a 28% improvement in ROUGE and BLEU scores.</p>
       </div>
     </div>
-
-    <div class="project-card">
-      <div class="project-banner" style="background: rgb(4, 41, 124);">
-        <div class="project-blurred-div"></div>
-        <div class="project-div-title">
-          <h5 class="project-title">Retrieval-Augmented Generation (RAG) System</h5>
-        </div>
-        <img src="./images/rag_icon.png" alt="RAG System" class="project-rounded-img" />
+    <div class="project-card" style="display: flex; flex-direction: column; height: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+      <div class="project-banner" style="position: relative; flex: 1; background: url('./images/rag_icon.png') no-repeat center center/cover;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 4px;">
+          Retrieval-Augmented Generation (RAG) System
+        </h3>
       </div>
-      <div class="project-details">
+      <div class="project-details" style="padding: 10px; flex: 1; background: #f9f9f9;">
         <p>Built a RAG system with LangChain and HuggingFace for efficient document retrieval on the QMSum dataset, achieving enhanced retrieval accuracy with ColBERT-based re-ranking.</p>
       </div>
     </div>
-
-    <div class="project-card">
-      <div class="project-banner" style="background: rgb(215, 218, 199);">
-        <div class="project-blurred-div"></div>
-        <div class="project-div-title">
-          <h5 class="project-title">Makeup Product Categorization</h5>
-        </div>
-        <img src="./images/makeup_icon.png" alt="Makeup Categorization" class="project-rounded-img" />
+    <div class="project-card" style="display: flex; flex-direction: column; height: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+      <div class="project-banner" style="position: relative; flex: 1; background: url('./images/makeup_icon.png') no-repeat center center/cover;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 4px;">
+          Makeup Product Categorization
+        </h3>
       </div>
-      <div class="project-details">
+      <div class="project-details" style="padding: 10px; flex: 1; background: #f9f9f9;">
         <p>Achieved 91% accuracy using advanced feature extraction (NER, n-grams, TF-IDF) and GPT-3 combined with SVM for e-commerce product categorization.</p>
       </div>
     </div>
-
-    <!-- Add similar cards for other projects -->
-
   </div>
 </section>
+
 
     <section id="blogs" class="projects sec-pad">
       <h2 class="heading heading-sec heading-sec__mb-bg">
