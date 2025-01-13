@@ -379,27 +379,48 @@ activations of multimodal models and vision transformers with neural responses.<
     <span class="heading-sec__main">Projects</span>
   </h2>
   <div class="project-cards-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
-    <div class="project-card" style="display: flex; flex-direction: column; height: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
+    <div class="project-card-container" style="perspective: 1000px; width: 300px;">
+  <div class="project-card" style="width: 100%; height: 300px; transform-style: preserve-3d; transition: transform 0.6s; position: relative;">
+    <!-- Front Side -->
+    <div class="project-card-front" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
       <div class="project-banner" style="position: relative; flex: 1; background: url('./images/projects/mental-health-llm.webp') no-repeat center center/cover;">
-        <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.8); padding: 5px 10px; border-radius: 4px;font-size: 20px;">
+        <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.8); padding: 5px 10px; border-radius: 4px; font-size: 20px;">
           Optimizing LLMs for Mental Health Counseling
         </h3>
       </div>
-      <div class="project-details" style="padding: 10px; flex: 1; background: #f9f9f9;font-size: 14px;">
+      <div class="project-details" style="padding: 10px; flex: 1; background: #f9f9f9; font-size: 14px;">
         <p>Fine-tuned Falcon LLM using LoRA and 4-bit quantization for empathy-driven mental health counseling, achieving a 28% improvement in ROUGE and BLEU scores.</p>
       </div>
-      <div style="display: flex; flex-wrap: wrap; gap: 10px; padding: 20px; background-color: #f9f9f9; border-radius: 8px;">
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">Python</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">Large Language Models</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">HuggingFace Transformers</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">LoRA</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">Quantization</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">Prompt Engineering</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">ROUGE</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">BLEU</span>
-        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 14px;">PyTorch</span>
+    </div>
+    <!-- Back Side -->
+    <div class="project-card-back" style="position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; border: 1px solid #ddd; border-radius: 8px; background: #f9f9f9; transform: rotateY(180deg); padding: 10px;">
+      <h4 style="font-size: 16px; margin-bottom: 10px;">Skills:</h4>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">Python</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">Large Language Models</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">HuggingFace Transformers</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">LoRA</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">Quantization</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">Prompt Engineering</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">ROUGE</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">BLEU</span>
+        <span style="background: #e0e0e0; padding: 10px 15px; border-radius: 5px; font-size: 12px;">PyTorch</span>
       </div>
     </div>
+  </div>
+</div>
+
+<script>
+  // Add hover flip functionality
+  const projectCard = document.querySelector('.project-card-container');
+  projectCard.addEventListener('mouseenter', () => {
+    projectCard.querySelector('.project-card').style.transform = 'rotateY(180deg)';
+  });
+  projectCard.addEventListener('mouseleave', () => {
+    projectCard.querySelector('.project-card').style.transform = 'rotateY(0deg)';
+  });
+</script>
+
     <div class="project-card" style="display: flex; flex-direction: column; height: 300px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
       <div class="project-banner" style="position: relative; flex: 1; background: url('./images/projects/rag.png') no-repeat center center/cover;">
         <h3 style="position: absolute; bottom: 10px; left: 10px; color: white; background: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 4px;">
